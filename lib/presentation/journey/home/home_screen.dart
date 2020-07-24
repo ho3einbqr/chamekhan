@@ -83,8 +83,8 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Wrap(
               alignment: WrapAlignment.spaceBetween,
               children: <Widget>[
-                AppBarButton(Icons.info),
-                AppBarButton(Icons.account_circle),
+                AppBarButton(Icons.info,(){}),
+                AppBarButton(Icons.account_circle,(){}),
               ],
             ),
           ),

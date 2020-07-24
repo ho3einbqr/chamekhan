@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 
 class AppBarButton extends StatelessWidget {
   dynamic _icon;
-  AppBarButton(this._icon);
+  VoidCallback _onPressed;
+  AppBarButton(this._icon,this._onPressed);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,7 @@ class AppBarButton extends StatelessWidget {
             this._icon,
             color: AppColor.buttonColor,
           ),
-          onPressed: () {},
+          onPressed: this._onPressed,
           splashColor: AppColor.buttonSplashColor,
         ),
       ),
