@@ -3,6 +3,8 @@ import 'dart:ui';
 import 'package:chamekhan/common/constants/graphic_constants.dart';
 import 'package:chamekhan/common/utils/bar_clipper/app_bar_clipper.dart';
 import 'package:chamekhan/common/utils/bar_clipper/bottom_bar_clipper.dart';
+import 'package:chamekhan/presentation/journey/dialog/account_dialog.dart';
+import 'package:chamekhan/presentation/journey/dialog/info_diaolg.dart';
 import 'package:chamekhan/presentation/theme/theme_color.dart';
 import 'package:chamekhan/presentation/widgets/app_bar_button.dart';
 import 'package:chamekhan/presentation/widgets/bar.dart';
@@ -26,13 +28,13 @@ class _HomeScreenState extends State<HomeScreen> {
     _changeFABOpacity = new ScrollController();
     _changeFABOpacity.addListener(() {
       if (_changeFABOpacity.position.userScrollDirection ==
-          ScrollDirection.reverse &&
+              ScrollDirection.reverse &&
           _fabColor == AppColor.buttonColorAlpha255)
         setState(() {
           _fabColor = AppColor.buttonColorAlpha200;
         });
       if (_changeFABOpacity.position.userScrollDirection ==
-          ScrollDirection.forward &&
+              ScrollDirection.forward &&
           _fabColor == AppColor.buttonColorAlpha200)
         setState(() {
           _fabColor = AppColor.buttonColorAlpha255;
@@ -62,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
           //AppBar
           Positioned(
             top: 0,
-            child: Bar(80,Offset(0,3),AppBarClipper()),
+            child: Bar(80, Offset(0, 3), AppBarClipper()),
           ),
           //Logo
           Positioned(
@@ -71,9 +73,7 @@ class _HomeScreenState extends State<HomeScreen> {
             width: MediaQuery.of(context).size.width,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                GraphicConstants.logo
-              ],
+              children: [GraphicConstants.logo],
             ),
           ),
           //AppBar Buttons
@@ -83,8 +83,22 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Wrap(
               alignment: WrapAlignment.spaceBetween,
               children: <Widget>[
-                AppBarButton(Icons.info,(){}),
-                AppBarButton(Icons.account_circle,(){}),
+                AppBarButton(Icons.info, () {
+                  showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return InfoDialog();
+                    },
+                  );
+                }),
+                AppBarButton(Icons.account_circle, () {
+                  showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AccountDialog();
+                    },
+                  );
+                }),
               ],
             ),
           ),
@@ -109,8 +123,8 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           //BottomBar
           Positioned(
-            bottom:0,
-            child: Bar(50,Offset(0,-3),BottomBarClipper()),
+            bottom: 0,
+            child: Bar(50, Offset(0, -3), BottomBarClipper()),
           ),
         ],
       ),
