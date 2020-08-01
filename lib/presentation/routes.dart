@@ -1,5 +1,5 @@
 import 'package:chamekhan/common/constants/router_constants.dart';
-import 'package:chamekhan/presentation/journey/Input/first_input.dart';
+import 'package:chamekhan/presentation/journey/Input/first_input_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
