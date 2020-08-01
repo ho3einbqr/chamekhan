@@ -3,6 +3,7 @@ import 'package:chamekhan/presentation/journey/Input/first_input_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+import 'journey/Input/second_input_screen.dart';
 import 'journey/home/home_screen.dart';
 
 class Routes {
@@ -18,6 +19,10 @@ class Routes {
         return MaterialPageRoute(
             settings: RouteSettings(name: RouteName.firstInputScreen),
             builder: (_) => Page1());
+      case RouteName.secondInputScreen:
+        return MaterialPageRoute(
+            settings: RouteSettings(name: RouteName.secondInputScreen),
+            builder: (_) => Page2());
     }
   }
 }
