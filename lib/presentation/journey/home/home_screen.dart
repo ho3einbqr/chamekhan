@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:chamekhan/common/constants/graphic_constants.dart';
+import 'package:chamekhan/common/constants/router_constants.dart';
 import 'package:chamekhan/common/utils/bar_clipper/app_bar_clipper.dart';
 import 'package:chamekhan/common/utils/bar_clipper/bottom_bar_clipper.dart';
 import 'package:chamekhan/presentation/journey/dialog/account_dialog.dart';
@@ -110,7 +111,9 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 FloatingActionButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, RouteName.firstInputScreen);
+                  },
                   backgroundColor: _fabColor,
                   splashColor: AppColor.buttonSplashColor,
                   child: Icon(
