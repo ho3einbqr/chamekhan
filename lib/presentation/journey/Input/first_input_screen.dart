@@ -36,6 +36,7 @@ class _Page1State extends State<Page1> {
                 color: Colors.green,
                 child: Text('Next Page'),
                 onPressed: (){
+                  Navigator.pushNamed(context, RouteName.secondInputScreen);
                 },
               ),
               FlatButton(
