@@ -23,6 +23,8 @@ class Routes {
         return MaterialPageRoute(
             settings: RouteSettings(name: RouteName.secondInputScreen),
             builder: (_) => Page2());
+      default:
+        return null;
     }
   }
 }
