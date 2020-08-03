@@ -49,19 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
       extendBody: true,
       body: Stack(
         children: [
-          ListView(
-            controller: _changeFABOpacity,
-            scrollDirection: Axis.vertical,
-            children: [
-              Padding(
-                padding: EdgeInsets.all(35),
-              ),
-              PoemList(),
-              Padding(
-                padding: EdgeInsets.all(45),
-              ),
-            ],
-          ),
+          PoemList(),
           //AppBar
           Positioned(
             top: 0,
