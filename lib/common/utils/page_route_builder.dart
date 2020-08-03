@@ -3,7 +3,8 @@ import 'package:flutter/cupertino.dart';
 class CustomPageRote extends PageRouteBuilder{
   final Widget widget;
   final String routeName;
-  CustomPageRote({@required this.widget,@required this.routeName}):super(
+  Curve curve;
+  CustomPageRote({@required this.widget,@required this.routeName, this.curve = Curves.ease}):super(
           settings: RouteSettings(name: routeName),
           transitionDuration: Duration(seconds: 1),
           transitionsBuilder: (BuildContext context,
@@ -11,7 +12,7 @@ class CustomPageRote extends PageRouteBuilder{
               Animation<double> secAnimation,
               Widget child) {
             animation =
-                CurvedAnimation(parent: animation, curve: Curves.ease);
+                CurvedAnimation(parent: animation, curve: curve);
             return ScaleTransition(
               alignment: Alignment.centerLeft,
               scale: animation,
