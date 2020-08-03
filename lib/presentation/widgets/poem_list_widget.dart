@@ -1,3 +1,4 @@
+import 'package:chamekhan/data/models/card_model.dart';
 import 'package:flutter/material.dart';
 
 class PoemList extends StatefulWidget {
@@ -9,7 +10,7 @@ class _PoemListState extends State<PoemList> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: null,
+      itemCount: cardModels.length,
       itemBuilder: (context, index) {
         return Card(
           margin: EdgeInsets.all(10),
