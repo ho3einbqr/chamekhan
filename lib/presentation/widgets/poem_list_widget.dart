@@ -8,120 +8,18 @@ class PoemList extends StatefulWidget {
 class _PoemListState extends State<PoemList> {
   @override
   Widget build(BuildContext context) {
-    return ListView(
-
-      shrinkWrap: true,
-      physics: NeverScrollableScrollPhysics(),
-      children: [
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a  is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a  is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a  is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a  is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a  is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-        Text(
-            'this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis '
-        ),
-      ],
+    return ListView.builder(
+      itemCount: null,
+      itemBuilder: (context, index) {
+        return Card(
+          margin: EdgeInsets.all(10),
+          child: Container(
+            height: 100,
+            width: 100,
+            child: null,
+          ),
+        );
+      },
     );
   }
 }
