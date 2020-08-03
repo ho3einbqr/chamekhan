@@ -1,4 +1,5 @@
 import 'package:chamekhan/common/constants/router_constants.dart';
+import 'package:chamekhan/common/utils/page_route_builder.dart';
 import 'package:chamekhan/presentation/journey/Input/first_input_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -16,13 +17,9 @@ class Routes {
             settings: RouteSettings(name: RouteName.homeScreen),
             builder: (_) => HomeScreen());
       case RouteName.firstInputScreen:
-        return MaterialPageRoute(
-            settings: RouteSettings(name: RouteName.firstInputScreen),
-            builder: (_) => Page1());
+        return CustomPageRote(widget: Page1(),routeName: RouteName.firstInputScreen);
       case RouteName.secondInputScreen:
-        return MaterialPageRoute(
-            settings: RouteSettings(name: RouteName.secondInputScreen),
-            builder: (_) => Page2());
+        return CustomPageRote(widget: Page2(),routeName: RouteName.secondInputScreen);
       default:
         return null;
     }
